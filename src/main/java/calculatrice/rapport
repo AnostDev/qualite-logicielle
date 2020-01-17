@@ -1,0 +1,83 @@
+
+# Rapport TP2 Qualité Logiciel  
+  
+### Chriss Santi S15026324  
+  
+  
+# Parie 1: Utilisation de Find Bugs  
+  
+Après analye du fichier Bugs.java avec FindBug, nous avons détecter 29 anomalies réparties comme suit:  
+  
+**Bad Practices**: 5 items  
+  
+- Null pointer dereference (1 item)  
+```java  
+... ligne 29
+public boolean equals(Object o) {  
+ Bugs b = (Bugs) o;
+ ```  
+ En effet il n'a pas été effectué un test sur l'existence de l'object `o` avant son affectation et son utilisation.
+- Bad casts of object references (1 item)  
+```java  
+... ligne 32  
+ return (y.intValue() == b.y.intValue()); // La méthode Equals assume que b a un type Bugs }
+```  
+  
+- Equal objects must have equal hashcodes (1 item)  
+```java
+ligne 29
+public boolean equals(Object o) { ...
+```
+La classe Bugs définie une méthode `requals` sans avoir définie une méthode `hashCode`. En effet pour pouvoir effectuer une comparaison d'égalité, toute classe définissant une méthode `equlas` doit aussi définir une méthode `hashCode`.
+
+- Checking String equality using == or != (2 items)  
+```java
+ligne 87
+static void hello(String lang) {  
+    if (lang == "English") {
+```
+Il est recommendé d'utliser la méthode `equals` de `java.lang.String.equals` que les méthodes `==` et `!=` pour les comparaison de String.
+
+**Correctness**  (10 items)
+- Unintialized read field in constructor (1 item)
+- Null pointer dereference (3 items)
+- An apparent infinite recursive loop (1 item)
+- Useless self-operation (2 items)
+- Suspicious bitwise logical expression (1 item)
+- Useless/non-informative string generated (1 item)
+- Unwritten field (1 item)
+**Dodgy code** (9 items)
+- Dead local store (2 items)
+- Casting from integer values (1 items)
+- Questionable integer match (2 items)
+- Null pointer dereference (1 item)
+- Switch case falls through (3 items)
+**Performance** (5 items)
+- Questionable Boxing of primitive value (2 items)
+- Bubious method use (2 items)
+- String concatenation in loop using + operator (1 item)
+
+# Partie 2: SonarLint
+SonarLint est un outil  qui permet de faire de detecter des erreurs de codes pre-compiler. Il permet grâce à des règles d'écriture de produire du code homogène et uniforme notament dans les projets d'équipes.
+
+L'analyse du fichier `Bugs.java` par SonarLint a relever 40 probmèmes.
+
+- Switch cases should end with an unconditional "break" statement
+```java
+Ligne 125
+case 8:  
+    buffer.append("huit");  
+case 9:
+```
+Ce lint nous indique que le `switch case` a la ligne 125 du code ne fini pas par un `break`; ce qui est contraire à la règle du switch case.
+- Methods and field names should not be the same or differ only by capitalization
+- "switch" statements should have "default" clauses
+- "switch" statements should have "default" clauses
+- ... etc
+- Package names should comply with a naming convention
+```java
+package calculatrice;
+Shared coding conventions allow teams to collaborate efficiently. This rule checks that all package names match a provided regular expression.
+With the default regular expression ^[a-z_]+(\.[a-z_][a-z0-9_]*)*$
+```
+Ce lint n'est pas un lint sévère, mais plutôt une bonne pratique. En effet la nominnation en programmation est très importante surtout lorsque c'est dans le cadre d'un projet d'équipe
