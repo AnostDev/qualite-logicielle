@@ -33,7 +33,7 @@ public class Date implements Comparable<Date> {
                         throw new DateError("Day must be between 1 and 31");
                 }
 
-                else if(is30Month(month) && isValid30Day(day))// Day can go up to 30
+                else if(is30Month(month) && !isValid30Day(day))// Day can go up to 30
                         throw new DateError("Day must be between 1 and 30");
             }
         }
@@ -50,7 +50,7 @@ public class Date implements Comparable<Date> {
                         throw new DateError("Day must be between 1 and 31");
                 }
 
-                else if(is30Month(month) && isValid30Day(day)) // Day can go up to 30
+                else if(is30Month(month) && !isValid30Day(day)) // Day can go up to 30
                         throw new DateError("Day must be between 1 and 30");
             }
         }
@@ -69,7 +69,7 @@ public class Date implements Comparable<Date> {
     }
 
     private List<Integer> MONTH_31 = new ArrayList<Integer> (Arrays.asList(1, 3, 5, 7, 8, 10, 12));
-    private List<Integer> MONTH_30 = new ArrayList<Integer> (Arrays.asList(4,6,9,112));
+    private List<Integer> MONTH_30 = new ArrayList<Integer> (Arrays.asList(4,6,9,11));
     private static final int IS_MONTH_31 = 31;
 
     boolean is31Month(int month) {
@@ -97,7 +97,7 @@ public class Date implements Comparable<Date> {
     }
 
     boolean isValid30Day(int day) {
-        return day <= 0 || day > 30;
+        return day > 0 && day <= 30;
     }
 
     boolean isValid31Day(int day) {

@@ -87,6 +87,25 @@ public class AgendaTest {
         assertTrue(end.compareTo(agenda.getEndDate(name)) == 0);
     }
 
+
+    @Test
+    public void testFailGetEndDate() throws DateError, EventError, AgendaError {
+        Agenda agenda = new Agenda();
+        String name = "Examen AMU";
+        Date start = new Date(4,1,2020);
+        Date end = new Date(10,1,2020);
+        Event event = new Event(name, start, end);
+        agenda.add(event);
+
+        try {
+            Date date = agenda.getEndDate("This should raise an exception");
+        }
+        catch (AgendaError e) {
+            System.err.println(e);
+            fail(e.toString());
+        }
+    }
+
     @Test
     public void testDelete() throws EventError, DateError {
         Agenda agenda = new Agenda();

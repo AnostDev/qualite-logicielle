@@ -37,28 +37,23 @@ public class Agenda {
 
     String searchEvent(Date d) throws AgendaError {
         boolean found = false;
-        String eventName = String.format("Not found event at date %s", d.toString());
-        for(Event e : events) {
+        String eventName = null;
+        for(Event e : events)
             if(e.getStart().compareTo(d) == 0) {
                 eventName = e.getName();
-                found = true;
+                break;
             }
-        }
-        if(!found) throw new AgendaError(eventName);
         return eventName;
     }
 
     boolean isPlannedEvent(String name) throws AgendaError {
         boolean found = false;
-        for(Event e: events) {
+        for(Event e: events)
             if (e.getName().equals(name)) {
                 found = true;
+                break;
             }
-        }
-        if(!found) {
-            throw new AgendaError(String.format("Not found event with name %s", name));
-        }
-        return true;
+        return found;
     }
 
     Date getStartDate(String name) throws AgendaError {
@@ -71,7 +66,7 @@ public class Agenda {
         if(found != null)
             return found;
         else {
-            throw new AgendaError(String.format("Couldn't find an Event with starting date %s", found));
+            throw new AgendaError(String.format("Couldn't find an Event %s starting date", name));
         }
     }
 
@@ -85,7 +80,7 @@ public class Agenda {
         if(found != null)
             return found;
         else {
-            throw new AgendaError(String.format("Couldn't find an Event with ending date %s", found.toString()));
+            throw new AgendaError(String.format("Couldn't find an Event %s ending date", name));
         }
     }
 

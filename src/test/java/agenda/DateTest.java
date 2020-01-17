@@ -52,9 +52,66 @@ public class DateTest {
     }
 
     @Test
+    public void testInvalidDay31LeapYear() throws DateError {
+        try {
+            Date date = new Date(32,12,2020);
+        }
+        catch (DateError e) {
+            System.err.println(e);
+            fail(e.toString());
+        }
+    }
+
+    @Test
+    public void testInvalidDay31NonLeapYear() throws DateError {
+        try {
+            Date date = new Date(32,12,2019);
+        }
+        catch (DateError e) {
+            System.err.println(e);
+            fail(e.toString());
+        }
+    }
+
+    @Test
+    public void testInvalidDay30LeapYear() throws DateError {
+        try {
+            Date date = new Date(32,11,2020);
+        }
+        catch (DateError e) {
+            System.err.println(e);
+            fail(e.toString());
+        }
+    }
+
+    @Test
+    public void testInvalidDay30NonLeapYear() throws DateError {
+        try {
+            Date date = new Date(32,11,2019);
+        }
+        catch (DateError e) {
+            System.err.println(e);
+            fail(e.toString());
+        }
+    }
+
+    @Test
     public void testInvalidMonth() throws DateError {
         try {
             Date date = new Date(1,0,2020);
+        }
+        catch (DateError e) {
+            System.err.println(e);
+            fail(e.toString());
+        }
+    }
+
+
+
+    @Test
+    public void testInvalidMonthNonLeapYear() throws DateError {
+        try {
+            Date date = new Date(1,0,2019);
         }
         catch (DateError e) {
             System.err.println(e);
@@ -73,6 +130,14 @@ public class DateTest {
             fail(e.toString());
         }
         //assertNotNull(date);
+    }
+
+    @Test
+    public void testEqualsDates() throws DateError {
+        Date date1 = new Date(1,1,2020);
+        Date date2 = new Date(1,1,2020);
+        assertTrue(date1.compareTo(date2) == 0);
+
     }
 
 }

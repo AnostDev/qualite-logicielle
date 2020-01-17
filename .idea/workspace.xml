@@ -1,48 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="048fd226-d870-42c6-85da-3c5a7d1e1766" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/$PRODUCT_WORKSPACE_FILE$" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ql.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/agenda/Agenda.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/agenda/AgendaError.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/agenda/Date.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/agenda/DateError.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/agenda/Event.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/agenda/EventError.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/calculatrice/Bugs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/calculatrice/Calculatrice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/calculatrice/rapport" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/agenda/AgendaTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/agenda/DateTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/agenda/EventTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/calculatrice/TestCalculatrice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/agenda/Agenda.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/agenda/AgendaError.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/agenda/Date.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/agenda/DateError.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/agenda/Event.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/agenda/EventError.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/tp2/Bugs.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/tp2/Calculatrice.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/agenda/AgendaTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/agenda/DateTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/agenda/EventTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/tp2/TestCalculatrice.class" afterDir="false" />
+    <list default="true" id="048fd226-d870-42c6-85da-3c5a7d1e1766" name="Default Changelist" comment="Add code coverage">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/agenda/Agenda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/agenda/Agenda.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/agenda/Date.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/agenda/Date.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/agenda/AgendaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/agenda/AgendaTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/agenda/DateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/agenda/DateTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/agenda/Agenda.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/agenda/Agenda.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/agenda/Date.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/agenda/Date.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tp2/Bugs.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tp2/Calculatrice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/agenda/AgendaTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/agenda/AgendaTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/agenda/DateTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/agenda/DateTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tp2/TestCalculatrice.class" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,6 +24,12 @@
   </component>
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="360" />
+  </component>
+  <component name="ExportToHTMLSettings">
+    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/coverage_report" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -70,6 +48,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -86,7 +65,39 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.agenda in ql">
+    <configuration name="AgendaTest.testDelete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ql" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="agenda.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="agenda" />
+      <option name="MAIN_CLASS_NAME" value="agenda.AgendaTest" />
+      <option name="METHOD_NAME" value="testDelete" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DateTest.testEqualsDates" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ql" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="agenda.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="agenda" />
+      <option name="MAIN_CLASS_NAME" value="agenda.DateTest" />
+      <option name="METHOD_NAME" value="testEqualsDates" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="agenda in ql" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ql" />
       <extension name="coverage">
@@ -104,6 +115,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.agenda in ql" />
+        <item itemvalue="JUnit.DateTest.testEqualsDates" />
+        <item itemvalue="JUnit.AgendaTest.testDelete" />
       </list>
     </recent_temporary>
   </component>
@@ -118,7 +131,7 @@
       <option name="presentableId" value="Default" />
       <updated>1579221902588</updated>
       <workItem from="1579221905100" duration="45000" />
-      <workItem from="1579221983870" duration="418000" />
+      <workItem from="1579221983870" duration="5586000" />
     </task>
     <servers />
   </component>
@@ -137,7 +150,7 @@
     </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/ql$agenda_in_ql.ic" NAME="agenda in ql Coverage Results" MODIFIED="1579222018030" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/ql$agenda_in_ql.ic" NAME="agenda in ql Coverage Results" MODIFIED="1579271058983" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>agenda.*</FILTER>
     </SUITE>
   </component>
